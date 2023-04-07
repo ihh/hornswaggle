@@ -19,7 +19,7 @@ $(document).ready (() => {
 			left: { scaledReward: { coins: .1 }, sequence: { cssClass: 'bonus', cards: [{cssClass:"warning",html:"one"},["two",2],"three"] } },
 			right: { stage: 'muppet', scaledReward: { coins: -.1 }, reward: { castle: .2 } } }] },
 	    { html: 'Time passes...', priority: -1 }],
-    status: (gs) => `Coins=${gs.coins} Castle=${gs.castle}`
+    status: (gs) => `Supplies: ${gs.food} <p> Notoriety: ${gs.fame} <p> Treasure: ${gs.gold}`
   }
   d = new Dealer (config)
   d.dealFirstCard()
